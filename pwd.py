@@ -12,8 +12,9 @@ count = int (count)
 user_pwd = input ('請輸入密碼:')
 while user_pwd != checked_pwd and count > 0: 
 	count = count - 1
-	print ('密碼錯誤!還有', count, '次機會')
+	print ('密碼錯誤!')
 	if count > 0:
+		print ('還有', count, '次機會')
 		user_pwd = input ('請輸入密碼:')
 	else:
 		print ('請聯絡資訊人員重設密碼')
